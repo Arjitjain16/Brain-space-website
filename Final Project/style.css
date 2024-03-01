@@ -1,0 +1,1217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: white; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vmax 10vmax;
+    z-index: 9;
+    position:fixed;
+    width: 100%;
+    mix-blend-mode: difference;
+}
+nav i{
+    display: none;
+    font-size: 2vmax;
+    color: white;
+}
+.nav-part2{
+    display: flex;
+    gap: 3vmax;
+    padding-left: 10vmax;
+}
+.nav-part2 > h4{
+    font-size: 0.8vmax;
+    font-weight: 600;
+    color:  white;
+}
+.cursor{
+    background-color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    mix-blend-mode: difference;
+    z-index: 999;
+    position: fixed ;
+}
+.page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    z-index: -1;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    /* background-color: red; */
+    padding-top: 2.8vmax;
+}
+.page2 > h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 12vmax;
+    font-size: 1.2vmax;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.container1{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding: 4vmax 4vmax;
+}
+.left1{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    padding: 3vmax 5vmax;
+}
+.box{
+    height: 22vmax;
+    width: 32vmax;
+    background-color: rgba(221, 221, 221, 0.225);
+    border-radius: 1.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow: hidden;
+
+}
+.blur{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.375);
+    /* background: red; */
+    backdrop-filter: blur(20px);
+    left: 0;
+    position: absolute;
+    z-index: 9;
+}
+.box img{
+    height: 30vh;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.right1{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    gap: 2vmax;
+    flex-direction: column;
+    align-items: start;
+    padding: 4vmax 2vmax ;
+    margin-bottom: 2vmax;
+}
+.right1 >h1{
+    width: 90%;
+    line-height: 3.4vmax;
+    font-weight: 200;
+    font-size: 3vmax;
+}
+.right1 > p{
+    font-weight: 100;
+    width: 90%;
+    line-height: 1.8vmax;
+}
+.right1 button{
+    padding: 0.8vmax 1vmax;
+    border-radius: 3vmax;
+    font-size: 1.2vmax;
+    background-color: transparent;
+    border: 1.5px solid black;
+}
+.page3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    padding-top: 3.5vmax;
+}
+.left3{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1.7vmax;
+    flex-direction: column;
+    padding: 1vmax 9vmax;
+}
+.left3 >h1{
+    font-size: 3vmax;
+    font-weight: 100;
+}
+.left3 p{
+    font-weight: 100;
+    line-height: 2vmax;
+    width: 100%;
+}
+.left3 button{
+    padding: 1vmax 2vmax;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+.right3{
+    height: 100%;
+    width: 45%;
+    position: relative;
+    padding: 5vmax 2.7vmax;  
+}
+.box3{
+    height: 270px;
+    width: 480px;
+    position: absolute;
+    bottom: 30%;
+    /* top: 19%; */
+    border-radius: 15px;
+    background-color: white;
+}
+.box3>video{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+
+.page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./download.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page4 > h3 {
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    letter-spacing: 3px;
+    z-index: 9;
+    position: absolute;
+    top: 2%;
+}
+.page4-top {
+    margin-top: -184px;
+    height: 35vmax;
+    width: 44vmax;
+}
+
+.img4 {
+    height: 115vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4vmax;
+}
+.img4 img{
+    height: 85vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2vmax;
+    /* margin-top: 2vmax; */
+}
+
+.content4 h1 {
+    font-size: 3vmax;
+    font-weight: 100;
+}
+
+.content4 p {
+    width: 50%;
+    font-size: 1.5vmax;
+    font-weight: 100;
+    line-height: 2vmax;
+}
+
+.content4 > button {
+    padding: 1vmax 2.2vmax;
+    border-radius: 2vmax;
+    border: 1.5px solid black;
+    background-color: transparent;
+}
+
+.container41 {
+    width: 100%;
+    padding: 6vmax 5vmax;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7vmax;
+}
+
+.left41 {
+    width: 50%;
+    height: 100%;
+}
+
+.left41 h2 {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 2.5vmax;
+    width: 80%;
+    margin-bottom: 140px;
+    margin-left: 70px;
+}
+
+.right41 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.box41 {
+    height: 42vh;
+    width: 32vmax;
+    margin-bottom: 1vmax;
+}
+
+.box41 video {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.container42 {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    margin-top:  1vmax;
+    margin-left: 1vmax;
+}
+
+.left42{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.box42 {
+    height: 55vh;
+    width: 32vmax;
+
+}
+
+.box42 video {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.right42{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 4vmax;
+}
+.right42 h2{
+    font-weight: 100;
+    width: 75%;
+    line-height: 2.5vmax;
+}
+.right42 button{
+    padding: 1vmax 2.2vmax;
+    border-radius: 2vmax;
+    border: 1.5px solid black;
+    background-color: transparent;
+}
+.container43{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+}
+.left43{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.left43 h2{
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 2.5vmax;
+    width: 74%;
+    margin-bottom: 140px;
+    margin-left: 70px;
+}
+.right43{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+}
+.box43 {
+    height: 55vh;
+    width: 32vmax;
+    /* margin-left: 3vmax; */
+}
+
+.box43 video {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.container44{
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+}
+.left44{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.box44{
+    height: 46vh;
+    width: 32vmax;
+}
+
+.box44 video {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.right44{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.5vmax;
+}
+.right44 h2{
+    font-weight: 100;
+    width: 75%;
+    line-height: 2.2vmax;
+}
+.right44 button{
+    padding: 1vmax 2.2vmax;
+    border-radius: 2vmax;
+    border: 1.5px solid black;
+    background-color: transparent;
+}
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    background-size: cover;
+}
+.page5 h3{
+    width: 100%;
+    text-align: center;
+    padding-top: 2.2vmax;
+    letter-spacing: 5px;
+    font-size: 1.3vmax;
+    color: white;
+    font-weight: 100;
+}
+.page5-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* padding: 1.5vw 5vw; */
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    /* background: red; */
+    gap: 2vmax;
+
+}
+
+.page5-info{
+    flex-shrink: 0;
+    width: 35vw;
+    height: 100%;
+    /* background-color: red; */
+    color: #fff;
+    padding: 5.5vmax 3vmax;
+}
+.page5-info h2{
+    /* font-family: archi; */
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.page5-info p{
+    font-size: 1.4vmax;
+    font-weight: 100;
+    line-height: 1.8vmax;
+}
+.page5-info button{
+    font-size: 1vw;
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-weight: 100;
+    color: white;
+}
+.page5-elems{
+    flex-shrink: 0;
+    height: 85%;
+    width:  40vw;
+    /* background: red; */
+    background-color: rgba(255, 255, 255, 0.182);
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg);
+    -webkit-mask-size: cover;
+    -webkit-mask-position: bottom;
+    -webkit-mask-repeat: no-repeat;
+    backdrop-filter: blur(20px);
+    padding: 2vw;
+    margin-bottom: 7vmax;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3vmax;
+    margin-top: 0.8vmax;
+    /* position: relative; */
+}
+.page5-elems h2{
+    color: white;
+    position: absolute;
+    bottom: 4%;
+ 
+
+}
+.page5-elems img{
+    width: 100%;
+    height: 15vmax;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 0 1vmax;
+}
+.elems-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    margin-left: 1vmax;
+}
+.elems-cont h1{
+    font-family: archi;
+    font-size: 4vw;
+    font-weight: 100;
+}
+.elems-cont p{
+    font-weight: 100;
+}
+.page5 .slider{
+    height: 3px;
+    width: 59%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 1.4%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%,0);
+    overflow: hidden;
+}
+.slider .slider-in{
+    height: 100%;
+    width: 17vw;
+    background-color: black;
+}
+.page6{
+    min-height: 100vh;
+    width: 100%;
+    /* padding: 7vmax 6vmax; */
+    /* background-color: #b3d4fc; */
+    background:linear-gradient(to right, #decbf5, #f9e6e5);   
+}
+.content6{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5vmax;
+    padding: 9vmax 6vmax;
+}
+.content6 > h1{
+    font-weight: 100;
+    font-size: 3vmax;
+    width: 90%;
+    letter-spacing: 4px;
+}
+.container6{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    padding: 2vmax 4vmax;
+}
+.cont6-left{
+    height: 100%;
+    width: 50%;
+}
+.cont6-left > h2{
+    font-weight: 100;
+    width: 95%;
+    font-size: 1.9vmax;
+}
+.cont6-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 3vmax;
+}
+.cont6-right h4{
+    width: 75%;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.7vmax;
+}
+.cont6-p{
+    margin-left: 6vmax;
+    font-size: 1.5vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;  
+}
+.line{
+    height: 3px;
+    width: 92%;
+    border-bottom: 1px solid black;
+    padding: 0 2vmax;
+}
+.content6-p2{
+    height: 100%;
+    width: 100%;
+    padding: 0 9.8vmax; 
+}
+.container6-p2{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 2vmax;
+}
+.box6-p2{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vmax;
+}
+.b1{
+    height: 32vmax;
+    width: 26vmax;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    /* background-position: center; */
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 2vmax;
+}
+.in-b1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 4vmax 3.5vmax;
+    gap: 2vmax;
+}
+.in-b1 h1{
+    font-weight: 100;
+    background-color: #C3E6FE;
+    border-radius: 2vmax;
+    padding: 1vmax 2vmax;
+}
+.in-b1 h1:nth-last-child(1){
+    background-color: #FFD8CE;
+}
+
+
+.heading4{
+    padding: 4vmax 0;
+}
+.heading4 > h4{
+    text-align: center;
+    font-size: 1.5vmax;
+    font-weight: 100;
+}
+.content6-p2 button{
+    padding: 1vmax 2vmax;
+    border: 2.5px solid black;
+    border-radius: 25px;
+}
+.bottom-img{
+    height: 10vh;
+    width: 55%;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    /* top: 1%; */
+    transform: translateX(-50%);
+   background-color: white;
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/substracts/hp_bdass_substract.svg);
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    margin-top: 90px;
+
+}
+
+
+.page7{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    
+}
+.page7 h3{
+    width: 100%;
+    text-align: center;
+    margin-top: 8vmax;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+.container7{
+    height: 23vmax;
+    width: 100%;
+    display: flex;
+    margin-top: 1vmax;
+}
+.left7{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vmax;
+    padding: 6.5vmax 10vmax;
+}
+.left7 h1{
+    font-size: 3vmax;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.left7 p{
+    font-size: 1.3vmax;
+    font-weight: 100;
+    line-height: 1.6vmax;
+}
+.right7{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+.right7 img{
+    height: 15vmax;
+    width: 77%;
+   margin: 6.5vmax 0.5vmax;
+   border-radius: 19px;
+}
+.container7-p2{
+    height: 30vmax;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    margin-top: 2.7vmax;
+}
+.part1-p2 , .part2-p2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vmax;
+}
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.box1 img{
+    height: 55px;
+    width: 55px;
+
+}
+.box1 p{
+    font-size: 10px;
+    line-height: -3px;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vmax;
+}
+.btn7{
+    padding: 4vmax 9vmax;
+    padding-bottom: 3vmax;
+}
+.btn7 button{
+    padding: 1vmax 2vmax;
+    border: 2.5px solid black;
+    border-radius: 25px;
+ 
+}
+
+
+#page8{
+    width: 94%;
+    margin: auto;
+    min-height: 100vh;
+    border-top-left-radius: 100px;
+    padding-bottom: 50vh;
+    position: relative;
+    background:conic-gradient(at 0 0 , #FFC3BE 0deg, #CED2FB 39.19deg, #C5E3FF 95.62deg, #BEEFF8 150.61deg, #B7F9F0 208.13deg, #F7FFC7 253.13deg, #FFE7D2 300deg, #FFD6CE 328.25deg, #FFC3BE 360deg), conic-gradient(from 176.66deg at 46.1% 33.87%, #E7E2F0 0deg, #95BFE8 39.19deg, #A3DEFF 104.7deg, #77A8F4 150.61deg, #6C89F0 210.89deg, #DAD4D4 272.3deg, #FFBBB4 314.64deg, #EFD4DB 328.25deg, #E7E2F0 360deg);
+    margin-top: 4vmax;
+}
+
+.page8_header_bg{
+    width: 16vw;
+    height: 16vw;
+    /* background-color: red; */
+    background-image: url(	https://www.brain.space/wp-content/themes/brain.space/assets/substracts/shape_corner_substract.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page8_circle{
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: #000;
+    background-position: center;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/imgs/side-shape-icons/hp_intro_side_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page8_header h3{
+    margin-top: -20vh;
+    /* background: red; */
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.page8_top{
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+    
+}
+
+.page8_top h2{
+    width: 35vw;
+    font-size: 3vw;
+    font-weight: 200;
+    /* background-color: yellow; */
+}
+
+.page8_top_right{
+    width: 40vw;
+}
+
+.page8_top_right h3{
+    margin-top: 0;
+    text-align: start;
+    letter-spacing: 0px;
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.page8_top_right p{
+    margin-top: 5vh;
+    font-size: 1.3vw;
+}
+
+.page8_center{
+    width:85vw;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.36);
+    backdrop-filter: blur(20px);
+    margin: auto;
+    padding: 1px 0 10vh 0;
+    border-radius: 50px;
+}
+
+.page8_center p{
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.icons_contain{
+    width: 70vw;
+    display: flex;
+    /* align-items: center; */
+    margin: auto;
+    /* margin-top: 15vh; */
+    /* background-color: red; */
+}
+
+.icons_in{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    padding-left:5vw;
+    position: relative;
+}
+
+.icons_in::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.24);
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+.last::after{
+    content:"";
+    height: 0;
+}
+
+.circle {
+    width: 8vh;
+    height: 8vh;
+    /* height: 0; */
+    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+    position: relative;
+   border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icons_in h4{
+    margin-left: 3vw;
+    font-weight: 200;
+  }
+
+  .page8_bot{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+}
+
+.page8_bot_left{
+    width: 35vw;
+    height: 100%;
+    /* background-color: red; */
+}
+.page8_bot p{
+    margin: 5vh 0;
+}
+
+.page8_bot h4{
+    padding: 3vh 0;
+    border-top: .5px solid rgb(34, 34, 34);
+    font-weight: 500;
+    font-size: .8vw;
+}
+
+.page8_bot_right{
+    width: 40vw;
+    height: 100%;
+    background-image: url('https://www.brain.space/wp-content/uploads/2023/07/peripheral-sensors.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#page9{
+    width:96%;
+    height: 125vh;
+    margin: auto;
+    background: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission_bg.jpg) no-repeat center;
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission-box_bg.jpg.svg);
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    margin-top: -25vh;
+    position: relative;
+    padding: 1px 4.5vw;
+}
+
+#page9 h3{
+     /* background: red; */
+    margin-top: 14vw;
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.page9_imgs{
+    position: absolute;
+    right: 0;
+    bottom: 10vh;
+}
+
+.page9_imgs img{
+    height: 11.3vh;
+}
+
+
+
+.page9_cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+.page9_left{
+    width: 35vw;
+}
+
+.page9_left h2{
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.page9_left p{
+    font-family: Archia;
+    margin: 7vh 0;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.page9_left h5{
+    font-size: 1.7vw;
+    font-family: Plight;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.page9_right{
+    width: 40vw;
+    height: 40vh;
+    border-radius: 200px;
+}
+
+.page9_right video{
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page10{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#page10 h3{
+    margin-bottom: 15vh;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.page10_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 4vw;
+}
+
+#page10 p{
+    text-align: center;
+    margin:15vh auto 0 auto;
+    width: 40vw;
+    font-size: 1.5vw;
+    font-family: Alight;
+}
+
+#page10 button{
+    margin: 5vh 0 0 5vw;
+    padding: 1vw 2vw;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+
+#page11{
+    width: 100%;
+    min-height: 150vh;
+    background: conic-gradient(from 160.47deg at 31.82% 74.94%, #F5F9FA 0deg, #F9A29E 251.93deg, #7D97FC 292.77deg, #FFFFFF 360deg);
+    position: relative;
+}
+
+.page11_in{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.128);
+    backdrop-filter: blur(70px);
+    color: #fff;
+    padding: 30vh 20vw 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page11_left{
+    width: 35vw;
+}
+
+.page11_left h2{
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.page11_left p{
+    margin-top: 3vh;
+    font-size: 1.4vw;
+}
+
+.page11_right{
+    width: 23vw;
+}
+.page11_right input{
+    border: none;
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 100;
+    font-family: Archia;
+    color: black;
+    padding: 1.2vw;
+    margin-top: 3vh;
+    border-radius: 20px;
+    background-color: #F0D9E2;
+}
+
+.page11_right button{
+    margin: 7vh 0 3vh 0;
+    padding: 1vw 1.5vw;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+
+.page11_right h6{
+    color: #000;
+    font-weight: 100;
+    font-size: .9vw;
+}
+
+.page11_right h6 span{
+    text-decoration: underline;
+}
+
+.page11_img{
+    width: 50vw;
+    height: 40vh;
+    background-image:url('https://www.brain.space/wp-content/themes/brain.space/assets/substracts/footer_substract.svg') ;
+    background-size: cover;
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: black;
+}
+
+.page11_img p{
+    margin: 25vh 5vw;
+    font-family: Alight;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 0 5vw;
+}
+
+.footer_cont{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.footer_right{
+    display: flex;
+    gap: 2vw;
+}
+
+.footer_right h4{
+    font-size: .7vw;
+}
+
+.footer_right i{
+    font-size: 1.5vw;
+}
